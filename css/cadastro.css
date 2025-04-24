@@ -1,0 +1,152 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    background: #f6c6a7;
+    font-family: 'Inter', Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Layout principal */
+  body > section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Formulário */
+  form {
+    background: #f6f1e5;
+    border: 2px solid #222;
+    border-radius: 36px;
+    box-shadow: 0 2px 16px -2px rgba(124, 79, 29, 0.13);
+    padding: 36px 32px;
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Logo */
+  form > img {
+    width: 70px;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Título */
+  form > h2 {
+    text-align: center;
+    color: #222;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  /* Campos */
+  form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    color: #222;
+    font-weight: 500;
+    gap: 6px;
+  }
+  
+  form input {
+    border: none;
+    border-bottom: 2px solid #222;
+    background: transparent;
+    font-size: 1em;
+    padding: 10px 4px;
+    color: #222;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  form input:focus {
+    border-bottom: 2px solid #e22727;
+  }
+  
+  /* Linha com CEP e Número */
+  form > div {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  
+  form > div label {
+    flex: 1;
+  }
+  
+  /* Botão de cadastro */
+  form button {
+    background: #f6c6a7;
+    color: #222;
+    border: none;
+    border-radius: 24px;
+    padding: 14px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 1px 8px -2px #e5c7a2;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 1px;
+  }
+  
+  form button:hover {
+    background: #e22727;
+    color: #fff;
+  }
+  
+  /* Link Voltar */
+  form a {
+    text-align: center;
+    margin-top: 8px;
+    color: #222;
+    text-decoration: none;
+    font-size: 0.95em;
+    display: inline-block;
+  }
+  
+  form a:hover {
+    color: #e22727;
+    text-decoration: underline;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    form {
+      padding: 24px 16px;
+      border-radius: 22px;
+    }
+  
+    form > img {
+      width: 60px;
+    }
+  
+    form > h2 {
+      font-size: 1.2em;
+    }
+  
+    form > div {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    form button {
+      font-size: 1em;
+      padding: 11px 0;
+    }
+  }
+  
